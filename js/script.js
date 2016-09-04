@@ -10,11 +10,11 @@ $(function(){
     $(href).fadeIn(700);
   })
 
-  $('.form .form__input').on('mouseover', function(e){
+  $('.form .form__input').on('mouseover focusin', function(e){
     $(this).siblings('.form__tooltip').stop().fadeIn(500);
   });
 
-  $('.form .form__input').on('mouseout', function(e){
+  $('.form .form__input').on('mouseout focusout', function(e){
     $(this).siblings('.form__tooltip').stop().fadeOut(500);
   });
 
